@@ -1,4 +1,4 @@
-Aby program dzia³a³ prawid³o niezbêdne jest:
+Aby program dziaÅ‚aÅ‚ prawidÅ‚o niezbÄ™dne jest:
 - posiadanie klucza aktywacyjnego Google API Elev - key.txt
 - Pythona 3.x oraz bibliotek:
 ----mpl_toolkits.basemap 
@@ -10,8 +10,10 @@ Aby program dzia³a³ prawid³o niezbêdne jest:
 ----ephem
 ----import math
 ----warnings
-- po³¹czenie z internetem 
+- poÅ‚Ä…czenie z internetem 
 
-Zadaniem programu jest wyliczenie widocznoœci konstelacji satelitów z wybranego miejsca na powierzchni Ziemi.
-W miejscu, gdzie pojawi siê proœba o podanie lokalizacji, nale¿y wpisaæ dowoln¹ miejscowoœæ, opocjonalnie kraj (dzia³a jak wyszukiwarka Google)
-Po wykonaniu obliczeñ powinien pojawiæ siê folder o nazwie: Wyniki - [miejscowosc][polkat sto¿ka obserwacji], w nim dwa folder: ze zdjêciami, wsp. wejœca i wyjœcia w FOV oraz raport.txt
+Zadaniem programu jest wyliczenie widocznoÅ›ci konstelacji satelitÃ³w z wybranego miejsca na powierzchni Ziemi.
+W miejscu, gdzie pojawi siÄ™ proÅ›ba o podanie lokalizacji, naleÅ¼y wpisaÄ‡ dowolnÄ… miejscowoÅ›Ä‡, opocjonalnie kraj (dziaÅ‚a jak wyszukiwarka Google)
+Po wykonaniu obliczeÅ„ powinien pojawiÄ‡ siÄ™ folder o nazwie: Wyniki - [miejscowosc][polkat stoÅ¼ka obserwacji], w nim dwa folder: ze zdjÄ™ciami, wsp. wejÅ›ca i wyjÅ›cia w FOV oraz raport.txt
+
+FunkcjÄ™ okreÅ›lajÄ…ce poÅ‚oÅ¼enie za pomocÄ… Google oraz dane TLE na postawie projektu Pana KM
