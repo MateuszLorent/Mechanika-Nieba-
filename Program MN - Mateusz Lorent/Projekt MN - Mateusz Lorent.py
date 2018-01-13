@@ -1,12 +1,9 @@
-# from mpl_toolkits.mplot3d import axes3d
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
 import numpy as np
-# import requests
 import os
 import geocoder
 import googlemaps
-# import time
 import ephem
 import math
 import warnings
@@ -70,9 +67,9 @@ def obs_position():
     # Klucz do googlemaps elevation API
     key = open('key.txt', 'r').readlines()
     gmaps = googlemaps.Client(key = key[0])
-    x = input('Określić twoje aktualne położenie jako miejsce obserwacji ? [t/n] ')
+    x = input('Wybrać twoje aktualne położenie jako miejsce obserwacji ? [y/n] ')
     # Jeżeli lokalizacja ma zostać wyznaczona dla aktualnej pozycji wyznacz się ją na podstawie IP
-    if x.lower() == 't':
+    if x.lower() == 'y':
         g = geocoder.ip('me')
     else:
         # Jeżeli dla dowolnego miejsca na podstwaie google
@@ -180,7 +177,7 @@ def plot_on_map(lat_sat, lon_sat, lat_obs = None, lon_obs = None,satellite = "b/
         except:
             pass
     plt.title("Satellite: " + str(satellite) + "   Place: " + str(place))
-
+# funkcja wymieniająca wartosci w tablicy
 def change_value(my_list,old_value,new_value):
     for a in range(len(my_list)):
         if my_list[a] == old_value:
@@ -204,7 +201,7 @@ great_check_list = [a for a in range(len(TLE_list))]
 great_sat_lat_list = [a for a in range(len(TLE_list))]
 great_sat_lon_list = [a for a in range(len(TLE_list))]
 
-cone_angle = 80
+cone_angle = input('Podać wartość półkąta stożka: ')
 
 # Rozwiązanie satelit, wspisanioe wyników do talbicy 2D
 for a in range(len(TLE_list)):
